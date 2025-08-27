@@ -1,4 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chat AI
+
+Uma aplicação de chat inteligente construída com Next.js, Tailwind CSS, DaisyUI, Supabase e OpenAI.
+
+## Funcionalidades
+
+- ✅ Autenticação segura com Supabase (email/senha)
+- ✅ Interface moderna com Tailwind CSS e DaisyUI
+- ✅ Chat integrado com OpenAI GPT-4o-mini
+- ✅ Header com avatar do usuário e logout
+- ✅ Animação de digitação durante respostas da IA
+- ✅ Design responsivo e acessível
+
+## Configuração
+
+### 1. Variáveis de Ambiente
+
+Configure as seguintes variáveis no arquivo `.env.local`:
+
+```env
+# Supabase Configuration
+NEXT_PUBLIC_SUPABASE_URL=sua_url_do_supabase
+NEXT_PUBLIC_SUPABASE_ANON_KEY=sua_chave_anonima_do_supabase
+
+# OpenAI Configuration
+OPENAI_API_KEY=sua_chave_da_openai
+```
+
+### 2. Configuração do Supabase
+
+1. Crie uma conta no [Supabase](https://supabase.com)
+2. Crie um novo projeto
+3. Vá em Settings > API para obter sua URL e chave anônima
+4. Configure a autenticação por email/senha em Authentication > Settings
+
+### 3. Configuração da OpenAI
+
+1. Crie uma conta na [OpenAI](https://platform.openai.com)
+2. Gere uma API key em API Keys
+3. Certifique-se de ter créditos disponíveis para usar o modelo GPT-4o-mini
 
 ## Getting Started
 
