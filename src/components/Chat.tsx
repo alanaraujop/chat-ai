@@ -90,11 +90,9 @@ export default function Chat() {
 
   const TypingAnimation = () => (
     <div className="chat chat-start">
-      <div className="chat-image avatar">
-        <div className="w-10 rounded-full bg-secondary text-secondary-content flex items-center justify-center">
+        <div className="w-10 h-10 rounded-full bg-secondary text-secondary-content flex items-center justify-center">
           <span className="text-sm font-medium">AI</span>
         </div>
-      </div>
       <div className="chat-bubble bg-base-200 text-base-content">
         <div className="flex space-x-1">
           <div className="w-2 h-2 bg-current rounded-full animate-bounce"></div>
@@ -122,8 +120,8 @@ export default function Chat() {
                 message.role === 'user' ? 'chat-end' : 'chat-start'
               }`}
             >
-              <div className="chat-image avatar">
-                <div className={`w-10 rounded-full ${
+              <div className="chat-image">
+                <div className={`w-10 h-10 rounded-full ${
                   message.role === 'user'
                     ? 'bg-primary text-primary-content'
                     : 'bg-secondary text-secondary-content'

@@ -26,9 +26,8 @@ export default function Header() {
           <div
             tabIndex={0}
             role="button"
-            className="btn btn-ghost btn-circle avatar"
           >
-            <div className="w-10 rounded-full bg-primary text-primary-content flex items-center justify-center">
+            <div className="w-10 h-10 rounded-full bg-primary text-primary-content flex items-center justify-center">
               {user.user_metadata?.avatar_url ? (
                 <img
                   src={user.user_metadata.avatar_url}
