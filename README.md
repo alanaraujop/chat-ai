@@ -7,6 +7,9 @@ Uma aplicação de chat inteligente construída com Next.js, Tailwind CSS, Daisy
 - ✅ Autenticação segura com Supabase (email/senha)
 - ✅ Interface moderna com Tailwind CSS e DaisyUI
 - ✅ Chat integrado com OpenAI GPT-4o-mini
+- ✅ **Integração com Google Sheets** - Catálogo de perfumes como fonte de dados
+- ✅ **Assistente especializado em perfumes** - Busca e recomendações personalizadas
+- ✅ **Renderização Markdown** - Formatação rica nas respostas do assistente
 - ✅ Header com avatar do usuário e logout
 - ✅ Animação de digitação durante respostas da IA
 - ✅ Design responsivo e acessível
@@ -38,6 +41,19 @@ OPENAI_API_KEY=sua_chave_da_openai
 1. Crie uma conta na [OpenAI](https://platform.openai.com)
 2. Gere uma API key em API Keys
 3. Certifique-se de ter créditos disponíveis para usar o modelo GPT-4o-mini
+
+### 4. Integração com Google Sheets
+
+A aplicação está configurada para usar uma planilha do Google Sheets como fonte de dados para o catálogo de perfumes:
+
+- **URL da Planilha**: `https://docs.google.com/spreadsheets/d/18idP4V7Xzy85fmbaUTXQd_JQn_DU0jdHL-jKOL8SjV4/edit`
+- **Formato**: A planilha deve conter colunas para: Nome, Marca, Categoria, Preço, Descrição, Notas, Disponibilidade
+- **Cache**: Os dados são armazenados em cache por 5 minutos para otimizar performance
+- **Funcionalidades**:
+  - Busca por nome, marca, categoria ou notas olfativas
+  - Filtros por categoria e marca
+  - Informações detalhadas sobre cada perfume
+  - Recomendações personalizadas baseadas nas preferências do usuário
 
 ## Getting Started
 
