@@ -105,15 +105,7 @@ export async function POST(request: NextRequest) {
 
           Nome e marca do perfume
 
-          Família olfativa e principais notas (topo, coração e fundo)
-
-          Perfil (fresco, doce, amadeirado etc.)
-
-          Sillage e duração
-
-          Melhor ocasião de uso
-
-          Tamanho disponível e preço (em R$)
+          Tamanho disponível
 
           Fale de forma envolvente, despertando desejo e conexão emocional.
 
@@ -127,7 +119,11 @@ export async function POST(request: NextRequest) {
 
           Estimule a compra:
 
-          “Esse perfume vai marcar sua presença de forma inesquecível! Gostaria que eu já reserve para você?”`,
+          “Esse perfume vai marcar sua presença de forma inesquecível! Gostaria que eu já reserve para você?”
+          
+          Pergunte se o cliente gostaria de outro perfume.
+          
+          Quando o cliente desejar fechar a compra gere um link para o whatsapp com os perfumes escolhidos, para o número "+5521966496047".`,
         },
         ...conversationHistory,
       ],

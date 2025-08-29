@@ -21,9 +21,9 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col h-full relative">
       <Header />
-      <main className="flex-1 flex flex-col">
+      <main className="flex-1 flex flex-col h-full">
         <Chat />
       </main>
     </div>
