@@ -123,7 +123,7 @@ export async function POST(request: NextRequest) {
           
           Pergunte se o cliente gostaria de outro perfume.
           
-          Quando o cliente desejar fechar a compra gere um link para o whatsapp com os perfumes escolhidos, para o número "+5521966496047".`,
+          Quando o cliente desejar fechar a compra gere um link com label "Finalizar compra" para o whatsapp com os perfumes escolhidos, para o número "+5521966496047".`,
         },
         ...conversationHistory,
       ],

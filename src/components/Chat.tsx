@@ -169,7 +169,7 @@ export default function Chat() {
                         h2: ({ children }) => <h2 className="text-lg font-bold mb-2">{children}</h2>,
                         h3: ({ children }) => <h3 className="text-base font-bold mb-2">{children}</h3>,
                         a: ({ href, children }) => (
-                          <a href={href} className=" border-2 rounded-lg p-2 text-primary text-l font-bold" target="_blank" rel="noopener noreferrer">
+                          <a href={href} className="border-2 rounded-lg p-2 text-primary text-l font-bold" target="_blank" rel="noopener noreferrer">
                             {children}
                           </a>
                         ),
@@ -194,7 +194,7 @@ export default function Chat() {
       </div>
 
       {/* Input Area */}
-      <div className="border-t bg-base-100 p-4">
+      <div className="flex-shrink-0 bg-white p-4 border-t border-gray-200">
         <div className="flex space-x-2">
           <textarea
             value={input}
