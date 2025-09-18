@@ -21,9 +21,11 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col h-full relative">
-      <Header />
-      <main className="flex-1 flex flex-col h-full">
+    <div className="min-h-screen flex flex-col h-screen overflow-hidden">
+      <div className="sticky top-0 z-10">
+        <Header />
+      </div>
+      <main className="flex-1 overflow-hidden">
         <Chat />
       </main>
     </div>
