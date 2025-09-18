@@ -5,20 +5,21 @@ import { useAuth } from '@/contexts/AuthContext';
 export default function Header() {
   const { user, signOut } = useAuth();
 
-  if (!user) return null;
+  // if (!user) return null;
 
   const getInitials = (email: string) => {
-    return email.charAt(0).toUpperCase();
+    return email.charAt(0).toUpperCase() || 'Eu';
   };
 
   const getUserName = () => {
-    return user.user_metadata?.full_name || user.email;
+    return 'Eu'
+    // return user.user_metadata?.full_name || user.email;
   };
 
   return (
     <header className="navbar bg-base-100 shadow-lg px-4">
       <div className="flex-1">
-        <h1 className="text-xl font-bold">Chat AI</h1>
+        <h1 className="text-xl font-bold">FragrâncIA</h1>
       </div>
       
       <div className="flex-none">
@@ -28,7 +29,7 @@ export default function Header() {
             role="button"
           >
             <div className="w-10 h-10 rounded-full bg-primary text-primary-content flex items-center justify-center">
-              {user.user_metadata?.avatar_url ? (
+              {user?.user_metadata?.avatar_url ? (
                 <img
                   src={user.user_metadata.avatar_url}
                   alt="Avatar"
@@ -36,7 +37,7 @@ export default function Header() {
                 />
               ) : (
                 <span className="text-sm font-medium">
-                  {getInitials(user.email)}
+                 Eu {/* {getInitials(user?.email)} */}
                 </span>
               )}
             </div>

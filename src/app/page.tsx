@@ -16,9 +16,9 @@ export default function Home() {
     );
   }
 
-  if (!user) {
-    return <LoginForm />;
-  }
+  // if (!user) {
+  //   return <LoginForm />;
+  // }
 
   return (
     <div className="min-h-screen flex flex-col h-screen overflow-hidden">
